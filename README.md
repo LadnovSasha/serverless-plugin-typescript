@@ -3,6 +3,11 @@
 
 Serverless plugin for zero-config Typescript support
 
+## This is Fork
+
+Original NPM module lives here:  http://www.npmjs.com/package/serverless-plugin-typescript
+Changelog from original version you can find in [CHANGELOG](https://github.com/LadnovSasha/serverless-plugin-typescript/blob/master/CHANGELOG.md)
+
 ## Features
 
 * Zero-config: Works out of the box without the need to install any other compiler or plugins
