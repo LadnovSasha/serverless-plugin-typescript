@@ -19,14 +19,14 @@ Changelog from original version you can find in [CHANGELOG](https://github.com/L
 ## Install
 
 ```sh
-yarn add --dev serverless-plugin-typescript
+npm install --save-dev @ladnov/serverless-plugin-typescript
 ```
 
 Add the following plugin to your `serverless.yml`:
 
 ```yaml
 plugins:
-  - serverless-plugin-typescript
+  - '@ladnov/serverless-plugin-typescript'
 ```
 
 ## Configure
@@ -97,12 +97,12 @@ The normal Serverless deploy procedure will automatically compile with Typescrip
 The plugin integrates very well with [serverless-offline](https://github.com/dherault/serverless-offline) to
 simulate AWS Lambda and AWS API Gateway locally.
 
-Add the plugins to your `serverless.yml` file and make sure that `serverless-plugin-typescript`
+Add the plugins to your `serverless.yml` file and make sure that `@ladnov/serverless-plugin-typescript`
 precedes `serverless-offline` as the order is important:
 ```yaml
   plugins:
     ...
-    - serverless-plugin-typescript
+    - '@ladnov/serverless-plugin-typescript'
     ...
     - serverless-offline
     ...
@@ -118,7 +118,7 @@ Configure your service the same as mentioned above, but additionally add the `se
 plugin as follows:
 ```yaml
   plugins:
-    - serverless-plugin-typescript
+    - '@ladnov/serverless-plugin-typescript'
     - serverless-dynamodb-local
     - serverless-offline
 ```
@@ -127,18 +127,18 @@ Run `serverless offline start`.
 
 #### serverless-plugin-simulate
 
-Add the plugins to your `serverless.yml` file and make sure that `serverless-plugin-typescript`
+Add the plugins to your `serverless.yml` file and make sure that `@ladnov/serverless-plugin-typescript`
 precedes `serverless-plugin-simulate` as the order is important:
 ```yaml
   plugins:
     ...
-    - serverless-plugin-typescript
+    - '@ladnov/serverless-plugin-typescript'
     ...
     - serverless-simulate-simulate
     ...
 ```
 
-`serverless-plugin-typescript` attaches to `simulate lambda` and `simulate apigateway` events
+`@ladnov/serverless-plugin-typescript` attaches to `simulate lambda` and `simulate apigateway` events
 
 #### Other useful options
 
